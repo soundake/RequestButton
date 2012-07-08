@@ -38,8 +38,8 @@ class RequestButtonBack extends \Nette\Forms\Controls\SubmitButton
 	{
 		if ($parent instanceof \Nette\Application\IPresenter)
 		{
-	    $backlinkId = $this->form->presenter->getParam(\RequestButton::BACKLINK_KEY);
-	    if (!$backlinkId OR !\RequestButtonStorage::is($backlinkId))
+	    $backlinkId = $this->form->presenter->getParam(RequestButton::BACKLINK_KEY);
+	    if (!$backlinkId OR !RequestButtonStorage::is($backlinkId))
 			{
 			  $this->setDisabled(true);
 			  $this->getParent()->removeComponent($this);
@@ -53,6 +53,6 @@ class RequestButtonBack extends \Nette\Forms\Controls\SubmitButton
 	 */
 	public function click()
 	{
-		\RequestButtonHelper::redirectBack($this->form);
+		RequestButtonHelper::redirectBack($this->form);
 	}
 }
