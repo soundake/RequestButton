@@ -110,7 +110,7 @@ class RequestButton extends \Nette\Forms\Controls\SubmitButton
 	{
 	  if (!$this->formIsPrepared)
 	  {
-			throw new InvalidStateException('Use RequestButtonReceiver instead AppForm , or call method `RequestButtonHelper::prepareForm($form);` after added all FormControls.');
+			throw new \Nette\InvalidStateException('Use RequestButtonReceiver instead AppForm , or call method `RequestButtonHelper::prepareForm($form);` after added all FormControls.');
 		}
 		return parent::getControl();
 	}

@@ -80,7 +80,7 @@ final class RequestButtonHelper extends \Nette\Object
 	 */
 	static public function redirectBack($form = NULL)
 	{
-		if ($form === NULL) $presenter = Environment::getApplication()->getPresenter();
+		if ($form === NULL) $presenter = \Nette\Environment::getApplication()->getPresenter(); 
 		else if ($form instanceof PresenterComponent OR $form instanceof AppForm) $presenter = $form->getPresenter();
     $backlinkId = $presenter->getParam(RequestButton::BACKLINK_KEY);
     if ($backlinkId AND ($form === NULL OR !($form->isSubmitted() instanceof RequestButton)) AND RequestButtonStorage::is($backlinkId))
