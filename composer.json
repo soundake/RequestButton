@@ -2,7 +2,7 @@
     "name": "soundake/requestbutton",
     "type": "library",
     "description": "Umoznuje presmerovat se mezi formulari a neztratit neulozeny obsah.",
-    "keywords": ["nette", "multi", "control", "upload"],
+    "keywords": ["nette", "component", "form", "control", "request", "requestbutton"],
     "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
     "authors": [
         {
