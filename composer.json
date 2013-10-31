@@ -1,0 +1,32 @@
+{
+    "name": "soundake/requestbutton",
+    "type": "library",
+    "description": "Umoznuje presmerovat se mezi formulari a neztratit neulozeny obsah.",
+    "keywords": ["nette", "multi", "control", "upload"],
+    "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+    "authors": [
+        {
+            "name": "Petr Procházka",
+            "homepage": "http://petrp.cz"
+        },
+        {
+            "name": "Lukáš Hroch",
+            "homepage": "http://soundake.cz"
+        }
+    ],
+    "support": {
+        "email": "soundake@gmail.com",
+        "issues": "https://github.com/soundake/requestbutton/issues"
+    },
+    "require": {
+        "nette/nette": "@dev"
+    },
+    "require-dev": {
+        "nette/tester": "@dev"
+    },
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    }
+}
