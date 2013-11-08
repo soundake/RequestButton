@@ -11,12 +11,13 @@ namespace RequestButton;
  * @version 0.2
  * @package RequestButton
  */
- 
- /**
+use soundake\helpers\MyForm;
+
+/**
  * Umožnuje zpracovat a vrátit požadavek od RequestButtonu.
  * Zjednodušuje práci s RequestButtonem (není potřeba volat pomocnou metodu).
  */
-class RequestButtonReceiver extends \Nette\Application\UI\Form
+class RequestButtonReceiver extends MyForm
 {
 	/**
 	 * Přidá do action backlink, aby formulář i po odeslání věděl kam se má vrátit.
